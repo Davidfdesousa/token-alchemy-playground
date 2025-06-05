@@ -1,0 +1,28 @@
+
+{
+  "brand": {
+    "creative": {
+      "light": {
+        "primary": { "value": "{color.purple.500.value}" },
+        "primaryHover": { "value": "{color.purple.600.value}" },
+        "surface": { "value": "{color.white.value}" },
+        "text": { "value": "{color.gray.900.value}" },
+        "background": { "value": "{color.purple.50.value}" }
+      },
+      "dark": {
+        "primary": { "value": "{color.purple.400.value}" },
+        "primaryHover": { "value": "{color.purple.300.value}" },
+        "surface": { "value": "{color.gray.800.value}" },
+        "text": { "value": "{color.white.value}" },
+        "background": { "value": "{color.gray.900.value}" }
+      },
+      "contrast": {
+        "primary": { "value": "{color.purple.900.value}" },
+        "primaryHover": { "value": "{color.purple.800.value}" },
+        "surface": { "value": "{color.white.value}" },
+        "text": { "value": "{color.black.value}" },
+        "background": { "value": "{color.purple.100.value}" }
+      }
+    }
+  }
+}

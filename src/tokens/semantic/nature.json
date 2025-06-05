@@ -1,0 +1,28 @@
+
+{
+  "brand": {
+    "nature": {
+      "light": {
+        "primary": { "value": "{color.green.500.value}" },
+        "primaryHover": { "value": "{color.green.600.value}" },
+        "surface": { "value": "{color.white.value}" },
+        "text": { "value": "{color.gray.900.value}" },
+        "background": { "value": "{color.green.50.value}" }
+      },
+      "dark": {
+        "primary": { "value": "{color.green.400.value}" },
+        "primaryHover": { "value": "{color.green.300.value}" },
+        "surface": { "value": "{color.gray.800.value}" },
+        "text": { "value": "{color.white.value}" },
+        "background": { "value": "{color.gray.900.value}" }
+      },
+      "contrast": {
+        "primary": { "value": "{color.green.900.value}" },
+        "primaryHover": { "value": "{color.green.800.value}" },
+        "surface": { "value": "{color.white.value}" },
+        "text": { "value": "{color.black.value}" },
+        "background": { "value": "{color.green.100.value}" }
+      }
+    }
+  }
+}

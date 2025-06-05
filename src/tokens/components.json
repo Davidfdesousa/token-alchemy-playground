@@ -1,0 +1,14 @@
+
+{
+  "button": {
+    "padding": { "value": "{spacing.md.value} {spacing.lg.value}" },
+    "borderRadius": { "value": "8px" },
+    "fontSize": { "value": "{typography.fontSize.base.value}" },
+    "fontWeight": { "value": "500" }
+  },
+  "card": {
+    "padding": { "value": "{spacing.xl.value}" },
+    "borderRadius": { "value": "12px" },
+    "shadow": { "value": "0 4px 6px -1px rgba(0, 0, 0, 0.1)" }
+  }
+}
