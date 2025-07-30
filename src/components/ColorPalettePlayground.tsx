@@ -15,9 +15,9 @@ interface ColorToken {
 const ColorPalettePlayground = () => {
   const [selectedBrand, setSelectedBrand] = useState('apple');
   const [selectedMode, setSelectedMode] = useState('light');
-  const [tokens, setTokens] = useState<Record<string, string>>({});
+  const [allTokens, setAllTokens] = useState<Record<string, Record<string, Record<string, string>>>>({});
   const [copiedToken, setCopiedToken] = useState<string | null>(null);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const { toast } = useToast();
 
   // Marcas reais da pasta dist/tokens
@@ -37,29 +37,43 @@ const ColorPalettePlayground = () => {
     { id: "dark", name: "Dark", emoji: "🌙" },
   ];
 
-  // Carrega tokens CSS do arquivo dist
-  const loadTokensFromCSS = async (brand: string, mode: string) => {
+  // Carrega todos os tokens de uma vez
+  const loadAllTokens = async () => {
     setLoading(true);
     try {
-      const response = await fetch(`/dist/tokens/${brand}/css/${mode}.css`);
-      const cssText = await response.text();
+      const tokenCache: Record<string, Record<string, Record<string, string>>> = {};
       
-      const colorTokens: Record<string, string> = {};
-      const regex = /--color_([^:]+):\s*([^;]+);/g;
-      let match;
-      
-      while ((match = regex.exec(cssText)) !== null) {
-        const tokenName = match[1];
-        const tokenValue = match[2].trim();
-        colorTokens[tokenName] = tokenValue;
+      for (const brand of brands) {
+        tokenCache[brand.id] = {};
+        for (const mode of modes) {
+          try {
+            const response = await fetch(`/dist/tokens/${brand.id}/css/${mode.id}.css`);
+            const cssText = await response.text();
+            
+            const colorTokens: Record<string, string> = {};
+            const regex = /--color_([^:]+):\s*([^;]+);/g;
+            let match;
+            
+            while ((match = regex.exec(cssText)) !== null) {
+              const tokenName = match[1];
+              const tokenValue = match[2].trim();
+              colorTokens[tokenName] = tokenValue;
+            }
+            
+            tokenCache[brand.id][mode.id] = colorTokens;
+          } catch (error) {
+            console.error(`Erro ao carregar tokens para ${brand.id}/${mode.id}:`, error);
+            tokenCache[brand.id][mode.id] = {};
+          }
+        }
       }
       
-      setTokens(colorTokens);
+      setAllTokens(tokenCache);
     } catch (error) {
       console.error("Erro ao carregar tokens:", error);
       toast({
         title: "Erro ao carregar tokens",
-        description: "Não foi possível carregar os tokens da marca selecionada.",
+        description: "Não foi possível carregar os tokens.",
         variant: "destructive",
       });
     } finally {
@@ -67,10 +81,10 @@ const ColorPalettePlayground = () => {
     }
   };
 
-  // Carrega tokens quando marca ou modo muda
+  // Carrega todos os tokens na inicialização
   useEffect(() => {
-    loadTokensFromCSS(selectedBrand, selectedMode);
-  }, [selectedBrand, selectedMode]);
+    loadAllTokens();
+  }, []);
 
   // Aplica a classe de tema dinamicamente
   useEffect(() => {
@@ -109,8 +123,13 @@ const ColorPalettePlayground = () => {
     }
   };
 
+  const getCurrentTokens = () => {
+    return allTokens[selectedBrand]?.[selectedMode] || {};
+  };
+
   const getColorTokens = (): ColorToken[] => {
-    return Object.entries(tokens).map(([name, value]) => ({
+    const currentTokens = getCurrentTokens();
+    return Object.entries(currentTokens).map(([name, value]) => ({
       name,
       value,
       category: 'color'
@@ -181,11 +200,11 @@ const ColorPalettePlayground = () => {
                   onClick={() => setSelectedBrand(brand.id)}
                   className="capitalize transition-all duration-300 hover:scale-105"
                   size="lg"
-                  disabled={loading}
-                >
-                  <span className="mr-2 text-lg">{brand.emoji}</span> 
-                  {brand.name}
-                </Button>
+                   disabled={loading}
+                 >
+                   <span className="mr-2 text-lg">{brand.emoji}</span> 
+                   {brand.name}
+                 </Button>
               ))}
             </div>
           </div>
@@ -200,11 +219,11 @@ const ColorPalettePlayground = () => {
                   onClick={() => setSelectedMode(mode.id)}
                   className="capitalize transition-all duration-300 hover:scale-105"
                   size="lg"
-                  disabled={loading}
-                >
-                  <span className="mr-2 text-lg">{mode.emoji}</span>
-                  {mode.name}
-                </Button>
+                   disabled={loading}
+                 >
+                   <span className="mr-2 text-lg">{mode.emoji}</span>
+                   {mode.name}
+                 </Button>
               ))}
             </div>
           </div>
@@ -229,14 +248,14 @@ const ColorPalettePlayground = () => {
               <TabsContent value="grouped" className="space-y-8 mt-8">
                 {Object.entries(groupedTokens).map(([groupName, tokens]) => (
                   <Card key={groupName} className="overflow-hidden border-2 hover:shadow-lg transition-all duration-300">
-                    <CardHeader className="bg-gradient-to-r from-slate-50 to-slate-100 dark:from-slate-800 dark:to-slate-900">
-                      <CardTitle className="flex items-center gap-3">
-                        <span className="text-xl">{groupName}</span>
-                        <Badge variant="secondary" className="text-sm px-3 py-1">
-                          {tokens.length} tokens
-                        </Badge>
-                      </CardTitle>
-                    </CardHeader>
+                     <CardHeader className="bg-muted/50 border-b">
+                       <CardTitle className="flex items-center gap-3 text-foreground">
+                         <span className="text-xl font-semibold">{groupName}</span>
+                         <Badge variant="secondary" className="text-sm px-3 py-1">
+                           {tokens.length} tokens
+                         </Badge>
+                       </CardTitle>
+                     </CardHeader>
                     <CardContent className="p-6">
                       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
                         {tokens.map(token => (
