@@ -1,0 +1,238 @@
+{
+  "meta": {
+    "generatedAt": "2025-07-30T00:27:26.252Z",
+    "version": "1.0.0",
+    "description": "Índice de design tokens gerados"
+  },
+  "brands": {
+    "apple": {
+      "modes": {
+        "light": {
+          "css": {
+            "path": "tokens/apple/css/light.css",
+            "exists": true,
+            "size": 5771
+          },
+          "json": {
+            "path": "tokens/apple/json/light.json",
+            "exists": true,
+            "size": 6809
+          }
+        },
+        "dark": {
+          "css": {
+            "path": "tokens/apple/css/dark.css",
+            "exists": true,
+            "size": 3429
+          },
+          "json": {
+            "path": "tokens/apple/json/dark.json",
+            "exists": true,
+            "size": 6809
+          }
+        }
+      }
+    },
+    "banana": {
+      "modes": {
+        "light": {
+          "css": {
+            "path": "tokens/banana/css/light.css",
+            "exists": true,
+            "size": 5738
+          },
+          "json": {
+            "path": "tokens/banana/json/light.json",
+            "exists": true,
+            "size": 6809
+          }
+        },
+        "dark": {
+          "css": {
+            "path": "tokens/banana/css/dark.css",
+            "exists": true,
+            "size": 3430
+          },
+          "json": {
+            "path": "tokens/banana/json/dark.json",
+            "exists": true,
+            "size": 6809
+          }
+        }
+      }
+    },
+    "cherry": {
+      "modes": {
+        "light": {
+          "css": {
+            "path": "tokens/cherry/css/light.css",
+            "exists": true,
+            "size": 5738
+          },
+          "json": {
+            "path": "tokens/cherry/json/light.json",
+            "exists": true,
+            "size": 6809
+          }
+        },
+        "dark": {
+          "css": {
+            "path": "tokens/cherry/css/dark.css",
+            "exists": true,
+            "size": 3430
+          },
+          "json": {
+            "path": "tokens/cherry/json/dark.json",
+            "exists": true,
+            "size": 6809
+          }
+        }
+      }
+    },
+    "apricot": {
+      "modes": {
+        "light": {
+          "css": {
+            "path": "tokens/apricot/css/light.css",
+            "exists": true,
+            "size": 5739
+          },
+          "json": {
+            "path": "tokens/apricot/json/light.json",
+            "exists": true,
+            "size": 6809
+          }
+        },
+        "dark": {
+          "css": {
+            "path": "tokens/apricot/css/dark.css",
+            "exists": true,
+            "size": 3431
+          },
+          "json": {
+            "path": "tokens/apricot/json/dark.json",
+            "exists": true,
+            "size": 6809
+          }
+        }
+      }
+    },
+    "grape": {
+      "modes": {
+        "light": {
+          "css": {
+            "path": "tokens/grape/css/light.css",
+            "exists": true,
+            "size": 5737
+          },
+          "json": {
+            "path": "tokens/grape/json/light.json",
+            "exists": true,
+            "size": 6809
+          }
+        },
+        "dark": {
+          "css": {
+            "path": "tokens/grape/css/dark.css",
+            "exists": true,
+            "size": 3429
+          },
+          "json": {
+            "path": "tokens/grape/json/dark.json",
+            "exists": true,
+            "size": 6809
+          }
+        }
+      }
+    },
+    "fig": {
+      "modes": {
+        "light": {
+          "css": {
+            "path": "tokens/fig/css/light.css",
+            "exists": true,
+            "size": 5735
+          },
+          "json": {
+            "path": "tokens/fig/json/light.json",
+            "exists": true,
+            "size": 6809
+          }
+        },
+        "dark": {
+          "css": {
+            "path": "tokens/fig/css/dark.css",
+            "exists": true,
+            "size": 3427
+          },
+          "json": {
+            "path": "tokens/fig/json/dark.json",
+            "exists": true,
+            "size": 6809
+          }
+        }
+      }
+    },
+    "kiwi": {
+      "modes": {
+        "light": {
+          "css": {
+            "path": "tokens/kiwi/css/light.css",
+            "exists": true,
+            "size": 5736
+          },
+          "json": {
+            "path": "tokens/kiwi/json/light.json",
+            "exists": true,
+            "size": 6809
+          }
+        },
+        "dark": {
+          "css": {
+            "path": "tokens/kiwi/css/dark.css",
+            "exists": true,
+            "size": 3428
+          },
+          "json": {
+            "path": "tokens/kiwi/json/dark.json",
+            "exists": true,
+            "size": 6809
+          }
+        }
+      }
+    },
+    "orange": {
+      "modes": {
+        "light": {
+          "css": {
+            "path": "tokens/orange/css/light.css",
+            "exists": true,
+            "size": 5738
+          },
+          "json": {
+            "path": "tokens/orange/json/light.json",
+            "exists": true,
+            "size": 6809
+          }
+        },
+        "dark": {
+          "css": {
+            "path": "tokens/orange/css/dark.css",
+            "exists": true,
+            "size": 3430
+          },
+          "json": {
+            "path": "tokens/orange/json/dark.json",
+            "exists": true,
+            "size": 6809
+          }
+        }
+      }
+    }
+  },
+  "summary": {
+    "totalBrands": 8,
+    "totalModes": 2,
+    "totalFiles": 32
+  }
+}
