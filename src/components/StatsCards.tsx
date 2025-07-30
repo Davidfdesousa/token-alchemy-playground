@@ -8,11 +8,11 @@ interface StatsCardsProps {
 }
 
 export const StatsCards = ({ tokens, outputCount }: StatsCardsProps) => {
-  // Count different types of tokens
-  const colorCount = Object.keys(tokens.primitives.colors).length;
-  const spacingCount = Object.keys(tokens.primitives.spacing).length;
-  const fontCount = Object.keys(tokens.primitives.font.size).length;
-  const themeCount = Object.keys(tokens.Global).length;
+  // Count different types of tokens with null safety
+  const colorCount = tokens?.primitives?.colors ? Object.keys(tokens.primitives.colors).length : 0;
+  const spacingCount = tokens?.primitives?.spacing ? Object.keys(tokens.primitives.spacing).length : 0;
+  const fontCount = tokens?.primitives?.font?.size ? Object.keys(tokens.primitives.font.size).length : 0;
+  const themeCount = tokens?.Global ? Object.keys(tokens.Global).length : 0;
 
   const stats = [
     {
