@@ -146,9 +146,6 @@ export const TokenViewer = ({
           </TabsTrigger>
         </TabsList>
 
-        <TabsContent value="tokens" className="space-y-6">
-          {/* existing tokens content */}
-        </TabsContent>
 
         <TabsContent value="colors">
           {tokens?.primitives?.colors && renderColorPalette(tokens.primitives.colors, "Primitive Colors")}
