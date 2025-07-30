@@ -38,12 +38,12 @@ const toCamelCase = (str: string): string =>
  */
 const extractBrandsFromTokens = (tokens: any): string[] => {
   const brands = new Set<string>();
-  if (tokens.Global && typeof tokens.Global === 'object') {
+  if (tokens?.Global && typeof tokens.Global === 'object') {
     Object.keys(tokens.Global).forEach(b => brands.add(b));
   }
   const recurse = (o: any) => {
     if (o && typeof o === 'object') {
-      if (o.$extensions?.mode) {
+      if (o?.$extensions?.mode && typeof o.$extensions.mode === 'object') {
         Object.keys(o.$extensions.mode)
           .filter(b => !['light','dark','contrast'].includes(b.toLowerCase()))
           .forEach(b => brands.add(b));
