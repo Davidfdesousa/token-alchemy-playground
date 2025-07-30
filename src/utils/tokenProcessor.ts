@@ -65,7 +65,8 @@ const processTokensForTheme = (
   prefix = ''
 ): Array<{ name: string; value: any }> => {
   const out: Array<{ name: string; value: any }> = [];
-  const walk = (cur: any, curPref: string) => {
+const walk = (cur: any, curPref: string) => {
+    if (!cur || typeof cur !== 'object') return;
     for (const [k, v] of Object.entries(cur)) {
       const np = curPref ? `${curPref}-${k}` : k;
       if (v && typeof v === 'object') {

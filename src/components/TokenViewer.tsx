@@ -67,13 +67,13 @@ export const TokenViewer = ({
       </CardHeader>
       <CardContent>
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-          {Object.entries(colors).map(
+          {colors && Object.entries(colors).map(
             ([colorName, colorShades]: [string, any]) => (
               <div key={colorName} className="space-y-2">
                 <h4 className="text-sm font-medium capitalize text-muted-foreground">
                   {colorName}
                 </h4>
-                {Object.entries(colorShades).map(
+                {colorShades && Object.entries(colorShades).map(
                   ([shade, tokenData]: [string, any]) => (
                     <div key={shade} className="group">
                       <div
@@ -151,7 +151,7 @@ export const TokenViewer = ({
         </TabsContent>
 
         <TabsContent value="colors">
-          {renderColorPalette(tokens.primitives.colors, "Primitive Colors")}
+          {tokens?.primitives?.colors && renderColorPalette(tokens.primitives.colors, "Primitive Colors")}
         </TabsContent>
 
         <TabsContent value="themes" className="space-y-6">
