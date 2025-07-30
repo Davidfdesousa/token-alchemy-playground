@@ -362,42 +362,79 @@ const ColorPalettePlayground = () => {
         {/* Usage Examples */}
         <Card>
           <CardHeader>
-            <CardTitle>Exemplos de Uso</CardTitle>
+            <CardTitle>Exemplos de Uso e Folhas CSS</CardTitle>
           </CardHeader>
-          <CardContent className="space-y-4">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <div className="space-y-2">
-                <h4 className="font-medium">CSS Variables</h4>
-                <div className="p-3 bg-muted rounded font-mono text-xs">
-                  .element {'{'}
-                  <br />
-                  &nbsp;&nbsp;color: var(--color_brand_primary_accent);
-                  <br />
-                  &nbsp;&nbsp;background: var(--color_brand_primary_lightest);
-                  <br />
-                  {'}'}
+          <CardContent className="space-y-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="space-y-4">
+                <h4 className="font-medium text-lg">Folhas CSS por Marca</h4>
+                <div className="space-y-3">
+                  <div className="space-y-2">
+                    <h5 className="font-medium">Modo Light</h5>
+                    <div className="p-3 bg-muted rounded">
+                      <a 
+                        href={`/dist/tokens/${selectedBrand}/css/light.css`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-mono text-xs text-blue-600 hover:text-blue-800 underline"
+                      >
+                        /dist/tokens/{selectedBrand}/css/light.css
+                      </a>
+                    </div>
+                  </div>
+                  <div className="space-y-2">
+                    <h5 className="font-medium">Modo Dark</h5>
+                    <div className="p-3 bg-muted rounded">
+                      <a 
+                        href={`/dist/tokens/${selectedBrand}/css/dark.css`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-mono text-xs text-blue-600 hover:text-blue-800 underline"
+                      >
+                        /dist/tokens/{selectedBrand}/css/dark.css
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
               
-              <div className="space-y-2">
-                <h4 className="font-medium">Classe CSS</h4>
-                <div className="p-3 bg-muted rounded font-mono text-xs">
-                  &lt;div className="ids-theme-{selectedBrand}"&gt;
-                  <br />
-                  &nbsp;&nbsp;Conteúdo com tema aplicado
-                  <br />
-                  &lt;/div&gt;
-                </div>
-              </div>
-              
-              <div className="space-y-2">
-                <h4 className="font-medium">Modo Escuro</h4>
-                <div className="p-3 bg-muted rounded font-mono text-xs">
-                  &lt;div className="ids-theme-{selectedBrand}" data-schema="dark"&gt;
-                  <br />
-                  &nbsp;&nbsp;Conteúdo em modo escuro
-                  <br />
-                  &lt;/div&gt;
+              <div className="space-y-4">
+                <h4 className="font-medium text-lg">Como Usar</h4>
+                <div className="space-y-4">
+                  <div className="space-y-2">
+                    <h5 className="font-medium">CSS Variables</h5>
+                    <div className="p-3 bg-muted rounded font-mono text-xs">
+                      .element {'{'}
+                      <br />
+                      &nbsp;&nbsp;color: var(--color_brand_primary_accent);
+                      <br />
+                      &nbsp;&nbsp;background: var(--color_surface_primary);
+                      <br />
+                      {'}'}
+                    </div>
+                  </div>
+                  
+                  <div className="space-y-2">
+                    <h5 className="font-medium">Aplicar Tema</h5>
+                    <div className="p-3 bg-muted rounded font-mono text-xs">
+                      &lt;div className="ids-theme-{selectedBrand}"&gt;
+                      <br />
+                      &nbsp;&nbsp;Conteúdo com tema aplicado
+                      <br />
+                      &lt;/div&gt;
+                    </div>
+                  </div>
+                  
+                  <div className="space-y-2">
+                    <h5 className="font-medium">Modo Escuro</h5>
+                    <div className="p-3 bg-muted rounded font-mono text-xs">
+                      &lt;div className="ids-theme-{selectedBrand}" data-schema="dark"&gt;
+                      <br />
+                      &nbsp;&nbsp;Conteúdo em modo escuro
+                      <br />
+                      &lt;/div&gt;
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

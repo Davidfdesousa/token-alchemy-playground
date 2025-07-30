@@ -15,24 +15,24 @@ const AppPreview = ({ selectedBrand, selectedMode }: AppPreviewProps) => {
       {/* Home Screen */}
       <Card className="overflow-hidden bg-background border-2">
         <CardContent className="p-0">
-          <div className="bg-gradient-to-br from-primary to-primary/80 p-6 text-primary-foreground">
+          <div className="p-6 text-white" style={{ backgroundColor: 'var(--color_brand_primary_accent, #3b82f6)' }}>
             <div className="flex items-center justify-between mb-4">
               <span className="text-sm opacity-90">9:41 AM</span>
               <div className="flex items-center gap-1">
-                <div className="w-4 h-2 bg-primary-foreground/60 rounded-sm"></div>
-                <div className="w-4 h-2 bg-primary-foreground/60 rounded-sm"></div>
-                <div className="w-4 h-2 bg-primary-foreground rounded-sm"></div>
+                <div className="w-4 h-2 bg-white/60 rounded-sm"></div>
+                <div className="w-4 h-2 bg-white/60 rounded-sm"></div>
+                <div className="w-4 h-2 bg-white rounded-sm"></div>
               </div>
             </div>
             
             <div className="flex items-center justify-between mb-6">
               <h1 className="text-xl font-semibold">Home</h1>
-              <Button variant="ghost" size="icon" className="text-primary-foreground hover:bg-primary-foreground/20">
+              <Button variant="ghost" size="icon" className="text-white hover:bg-white/20">
                 <Settings className="w-5 h-5" />
               </Button>
             </div>
 
-            <div className="bg-primary-foreground/10 backdrop-blur-sm rounded-xl p-4 mb-6">
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 mb-6">
               <p className="text-sm opacity-90 mb-1">Total balance</p>
               <h2 className="text-2xl font-bold mb-3">$8800.250</h2>
               <p className="text-sm opacity-75">7858 XXXX XXXX XXXX</p>
@@ -42,18 +42,18 @@ const AppPreview = ({ selectedBrand, selectedMode }: AppPreviewProps) => {
             </div>
 
             <div className="grid grid-cols-3 gap-4">
-              <Button variant="secondary" className="flex flex-col gap-2 h-auto py-3">
+              <button className="flex flex-col gap-2 h-auto py-3 px-3 rounded-lg bg-white/20 hover:bg-white/30 transition-colors text-white">
                 <Send className="w-5 h-5" />
                 <span className="text-xs">Send Money</span>
-              </Button>
-              <Button variant="secondary" className="flex flex-col gap-2 h-auto py-3">
+              </button>
+              <button className="flex flex-col gap-2 h-auto py-3 px-3 rounded-lg bg-white/20 hover:bg-white/30 transition-colors text-white">
                 <QrCode className="w-5 h-5" />
                 <span className="text-xs">QR Actions</span>
-              </Button>
-              <Button variant="secondary" className="flex flex-col gap-2 h-auto py-3">
+              </button>
+              <button className="flex flex-col gap-2 h-auto py-3 px-3 rounded-lg bg-white/20 hover:bg-white/30 transition-colors text-white">
                 <CreditCard className="w-5 h-5" />
                 <span className="text-xs">Pay Bill</span>
-              </Button>
+              </button>
             </div>
           </div>
 
@@ -112,24 +112,24 @@ const AppPreview = ({ selectedBrand, selectedMode }: AppPreviewProps) => {
       {/* Transaction Report */}
       <Card className="overflow-hidden bg-background border-2">
         <CardContent className="p-0">
-          <div className="bg-gradient-to-br from-primary to-primary/80 p-6 text-primary-foreground">
+          <div className="p-6 text-white" style={{ backgroundColor: 'var(--color_brand_primary_accent, #3b82f6)' }}>
             <div className="flex items-center justify-between mb-4">
               <span className="text-sm opacity-90">9:41 AM</span>
               <div className="flex items-center gap-1">
-                <div className="w-4 h-2 bg-primary-foreground/60 rounded-sm"></div>
-                <div className="w-4 h-2 bg-primary-foreground/60 rounded-sm"></div>
-                <div className="w-4 h-2 bg-primary-foreground rounded-sm"></div>
+                <div className="w-4 h-2 bg-white/60 rounded-sm"></div>
+                <div className="w-4 h-2 bg-white/60 rounded-sm"></div>
+                <div className="w-4 h-2 bg-white rounded-sm"></div>
               </div>
             </div>
             
             <div className="flex items-center gap-3 mb-6">
-              <Button variant="ghost" size="icon" className="text-primary-foreground hover:bg-primary-foreground/20">
+              <Button variant="ghost" size="icon" className="text-white hover:bg-white/20">
                 <ArrowLeft className="w-5 h-5" />
               </Button>
               <h1 className="text-xl font-semibold">Transaction report</h1>
             </div>
 
-            <div className="bg-primary-foreground/10 backdrop-blur-sm rounded-xl p-4">
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
               <p className="text-sm opacity-90 mb-1">Total balance</p>
               <h2 className="text-2xl font-bold mb-3">$8800.250</h2>
               <p className="text-sm opacity-75">7858 XXXX XXXX XXXX</p>
@@ -241,12 +241,12 @@ const AppPreview = ({ selectedBrand, selectedMode }: AppPreviewProps) => {
             </div>
 
             <div className="flex gap-2 mb-6">
-              <Button variant="default" size="sm" className="rounded-full">
+              <button className="px-4 py-2 rounded-full text-sm font-medium text-white" style={{ backgroundColor: 'var(--color_brand_primary_accent, #3b82f6)' }}>
                 Account
-              </Button>
-              <Button variant="outline" size="sm" className="rounded-full">
+              </button>
+              <button className="px-4 py-2 rounded-full text-sm font-medium border border-border bg-background hover:bg-muted">
                 Card
-              </Button>
+              </button>
             </div>
 
             <div className="flex items-center gap-4 mb-6">
