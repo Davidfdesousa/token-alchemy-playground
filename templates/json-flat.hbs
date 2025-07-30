@@ -1,0 +1,14 @@
+{
+  "meta": {
+    "brand": "{{brand}}",
+    "mode": "{{mode}}",
+    "generatedAt": "{{date}}",
+    "version": "1.0.0",
+    "description": "Design tokens for {{brand}} brand in {{mode}} mode"
+  },
+  "tokens": {
+{{#each tokens}}
+    "{{name}}": "{{value}}"{{#unless @last}},{{/unless}}
+{{/each}}
+  }
+}

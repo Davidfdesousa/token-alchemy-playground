@@ -1,0 +1,7 @@
+{
+  "scripts": {
+    "build:tokens": "node scripts/build-tokens.js",
+    "watch:tokens": "nodemon --watch tokens/ --exec 'npm run build:tokens'",
+    "dev:full": "npm run build:tokens && npm run dev"
+  }
+}
