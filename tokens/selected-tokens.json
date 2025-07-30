@@ -324,13 +324,13 @@
             "type": "other",
             "$extensions": {
               "mode": {
-                "Maçã": "#FFFEF5",
-                "Banana": "#FFFEF5",
-                "Cereja": "#FFFEF5",
-                "Damasco": "#FFFEF5",
-                "Uva": "#FFFEF5",
-                "Figo": "#FFFEF5",
-                "Kiwi": "#FFFEF5",
+                "Maçã": "#FFF5F5",
+                "Banana": "#FFFEF0",
+                "Cereja": "#FFF0F0",
+                "Damasco": "#FFF7E6",
+                "Uva": "#F5F0FF",
+                "Figo": "#F0F5F0",
+                "Kiwi": "#F0FFF0",
                 "Laranja": "#FFFEF5"
               }
             }
@@ -340,13 +340,13 @@
             "type": "other",
             "$extensions": {
               "mode": {
-                "Maçã": "#BD4800",
-                "Banana": "#BD4800",
-                "Cereja": "#BD4800",
-                "Damasco": "#BD4800",
-                "Uva": "#BD4800",
-                "Figo": "#BD4800",
-                "Kiwi": "#BD4800",
+                "Maçã": "#A80000",
+                "Banana": "#B8860B",
+                "Cereja": "#B22222",
+                "Damasco": "#FF8C00",
+                "Uva": "#4B0082",
+                "Figo": "#800080",
+                "Kiwi": "#32CD32",
                 "Laranja": "#BD4800"
               }
             }
@@ -356,14 +356,14 @@
             "type": "other",
             "$extensions": {
               "mode": {
-                "Maçã": "#FF6200",
-                "Banana": "#FF7824",
-                "Cereja": "#FF7824",
-                "Damasco": "#FF7824",
-                "Uva": "#FF7824",
-                "Figo": "#FF7824",
-                "Kiwi": "#FF7824",
-                "Laranja": "#FF7824"
+                "Maçã": "#FF0000",
+                "Banana": "#FFD700",
+                "Cereja": "#DC143C",
+                "Damasco": "#FFA500",
+                "Uva": "#8A2BE2",
+                "Figo": "#9932CC",
+                "Kiwi": "#9ACD32",
+                "Laranja": "#FF6200"
               }
             }
           },
@@ -372,13 +372,13 @@
             "type": "other",
             "$extensions": {
               "mode": {
-                "Maçã": "#FF9757",
-                "Banana": "#FF9757",
-                "Cereja": "#FF9757",
-                "Damasco": "#FF9757",
-                "Uva": "#FF9757",
-                "Figo": "#FF9757",
-                "Kiwi": "#FF9757",
+                "Maçã": "#FF6B6B",
+                "Banana": "#FFE55C",
+                "Cereja": "#FF6B8A",
+                "Damasco": "#FFB84D",
+                "Uva": "#B19CD9",
+                "Figo": "#C371C3",
+                "Kiwi": "#B5E550",
                 "Laranja": "#FF9757"
               }
             }
@@ -404,13 +404,13 @@
             "type": "other",
             "$extensions": {
               "mode": {
-                "Maçã": "#521F00",
-                "Banana": "#521F00",
-                "Cereja": "#521F00",
-                "Damasco": "#521F00",
-                "Uva": "#521F00",
-                "Figo": "#521F00",
-                "Kiwi": "#521F00",
+                "Maçã": "#660000",
+                "Banana": "#996600",
+                "Cereja": "#8B0000",
+                "Damasco": "#CC5500",
+                "Uva": "#2E004F",
+                "Figo": "#4B0040",
+                "Kiwi": "#1A5500",
                 "Laranja": "#521F00"
               }
             }
@@ -420,13 +420,13 @@
             "type": "other",
             "$extensions": {
               "mode": {
-                "Maçã": "#FF7824",
-                "Banana": "#FF7824",
-                "Cereja": "#FF7824",
-                "Damasco": "#FF7824",
-                "Uva": "#FF7824",
-                "Figo": "#FF7824",
-                "Kiwi": "#FF7824",
+                "Maçã": "#FF4D4D",
+                "Banana": "#FFCC33",
+                "Cereja": "#FF5A79",
+                "Damasco": "#FF9933",
+                "Uva": "#9966CC",
+                "Figo": "#B366B3",
+                "Kiwi": "#8FBC8F",
                 "Laranja": "#FF7824"
               }
             }
@@ -436,13 +436,13 @@
             "type": "other",
             "$extensions": {
               "mode": {
-                "Maçã": "#FF6200",
-                "Banana": "#FF6200",
-                "Cereja": "#FF6200",
-                "Damasco": "#FF6200",
-                "Uva": "#FF6200",
-                "Figo": "#FF6200",
-                "Kiwi": "#FF6200",
+                "Maçã": "#FF0000",
+                "Banana": "#FFD700",
+                "Cereja": "#DC143C",
+                "Damasco": "#FFA500",
+                "Uva": "#8A2BE2",
+                "Figo": "#9932CC",
+                "Kiwi": "#9ACD32",
                 "Laranja": "#FF6200"
               }
             }
@@ -453,12 +453,12 @@
             "$extensions": {
               "mode": {
                 "Maçã": "#FFFFFF",
-                "Banana": "#FFFFFF",
+                "Banana": "#000000",
                 "Cereja": "#FFFFFF",
-                "Damasco": "#FFFFFF",
+                "Damasco": "#000000",
                 "Uva": "#FFFFFF",
                 "Figo": "#FFFFFF",
-                "Kiwi": "#FFFFFF",
+                "Kiwi": "#000000",
                 "Laranja": "#FFFFFF"
               }
             }
@@ -469,12 +469,12 @@
             "$extensions": {
               "mode": {
                 "Maçã": "#FFFFFF",
-                "Banana": "#FFFFFF",
+                "Banana": "#000000",
                 "Cereja": "#FFFFFF",
-                "Damasco": "#FFFFFF",
+                "Damasco": "#000000",
                 "Uva": "#FFFFFF",
                 "Figo": "#FFFFFF",
-                "Kiwi": "#FFFFFF",
+                "Kiwi": "#000000",
                 "Laranja": "#FFFFFF"
               }
             }
@@ -502,13 +502,13 @@
             "type": "other",
             "$extensions": {
               "mode": {
-                "Maçã": "#697596",
-                "Banana": "#697596",
-                "Cereja": "#697596",
-                "Damasco": "#697596",
-                "Uva": "#697596",
-                "Figo": "#697596",
-                "Kiwi": "#697596",
+                "Maçã": "#8B4B6B",
+                "Banana": "#B8860B",
+                "Cereja": "#8B4B6B",
+                "Damasco": "#CD853F",
+                "Uva": "#483D8B",
+                "Figo": "#2F4F4F",
+                "Kiwi": "#556B2F",
                 "Laranja": "#697596"
               }
             }
@@ -518,13 +518,13 @@
             "type": "other",
             "$extensions": {
               "mode": {
-                "Maçã": "#8791AB",
-                "Banana": "#8791AB",
-                "Cereja": "#8791AB",
-                "Damasco": "#8791AB",
-                "Uva": "#8791AB",
-                "Figo": "#8791AB",
-                "Kiwi": "#8791AB",
+                "Maçã": "#CD8FA9",
+                "Banana": "#DDA0DD",
+                "Cereja": "#CD8FA9",
+                "Damasco": "#F4A460",
+                "Uva": "#9370DB",
+                "Figo": "#708090",
+                "Kiwi": "#9ACD32",
                 "Laranja": "#8791AB"
               }
             }
@@ -534,13 +534,13 @@
             "type": "other",
             "$extensions": {
               "mode": {
-                "Maçã": "#3F465A",
-                "Banana": "#3F465A",
-                "Cereja": "#3F465A",
-                "Damasco": "#3F465A",
-                "Uva": "#3F465A",
-                "Figo": "#3F465A",
-                "Kiwi": "#3F465A",
+                "Maçã": "#5A3F3F",
+                "Banana": "#8B7D00",
+                "Cereja": "#5A3F3F",
+                "Damasco": "#A0522D",
+                "Uva": "#2F2F5A",
+                "Figo": "#2F2F2F",
+                "Kiwi": "#3F5A3F",
                 "Laranja": "#3F465A"
               }
             }
@@ -550,13 +550,13 @@
             "type": "other",
             "$extensions": {
               "mode": {
-                "Maçã": "#F0F1F4",
-                "Banana": "#F0F1F4",
-                "Cereja": "#F0F1F4",
-                "Damasco": "#F0F1F4",
-                "Uva": "#F0F1F4",
-                "Figo": "#F0F1F4",
-                "Kiwi": "#F0F1F4",
+                "Maçã": "#F4F0F0",
+                "Banana": "#F5F5DC",
+                "Cereja": "#F4F0F0",
+                "Damasco": "#FDF5E6",
+                "Uva": "#F0F0F4",
+                "Figo": "#F0F4F0",
+                "Kiwi": "#F0F4F0",
                 "Laranja": "#F0F1F4"
               }
             }
@@ -566,13 +566,13 @@
             "type": "other",
             "$extensions": {
               "mode": {
-                "Maçã": "#2A2F3C",
-                "Banana": "#2A2F3C",
-                "Cereja": "#2A2F3C",
-                "Damasco": "#2A2F3C",
-                "Uva": "#2A2F3C",
-                "Figo": "#2A2F3C",
-                "Kiwi": "#2A2F3C",
+                "Maçã": "#3C2A2A",
+                "Banana": "#3C3A2A",
+                "Cereja": "#3C2A2A",
+                "Damasco": "#3C2F2A",
+                "Uva": "#2A2A3C",
+                "Figo": "#2A3C2A",
+                "Kiwi": "#2A3C2A",
                 "Laranja": "#2A2F3C"
               }
             }
@@ -582,13 +582,13 @@
             "type": "other",
             "$extensions": {
               "mode": {
-                "Maçã": "#697596",
-                "Banana": "#697596",
-                "Cereja": "#697596",
-                "Damasco": "#697596",
-                "Uva": "#697596",
-                "Figo": "#697596",
-                "Kiwi": "#697596",
+                "Maçã": "#8B4B6B",
+                "Banana": "#B8860B",
+                "Cereja": "#8B4B6B",
+                "Damasco": "#CD853F",
+                "Uva": "#483D8B",
+                "Figo": "#2F4F4F",
+                "Kiwi": "#556B2F",
                 "Laranja": "#697596"
               }
             }
@@ -598,13 +598,13 @@
             "type": "other",
             "$extensions": {
               "mode": {
-                "Maçã": "#8791AB",
-                "Banana": "#8791AB",
-                "Cereja": "#8791AB",
-                "Damasco": "#8791AB",
-                "Uva": "#8791AB",
-                "Figo": "#8791AB",
-                "Kiwi": "#8791AB",
+                "Maçã": "#CD8FA9",
+                "Banana": "#DDA0DD",
+                "Cereja": "#CD8FA9",
+                "Damasco": "#F4A460",
+                "Uva": "#9370DB",
+                "Figo": "#708090",
+                "Kiwi": "#9ACD32",
                 "Laranja": "#8791AB"
               }
             }
@@ -614,13 +614,13 @@
             "type": "other",
             "$extensions": {
               "mode": {
-                "Maçã": "#697596",
-                "Banana": "#697596",
-                "Cereja": "#697596",
-                "Damasco": "#697596",
-                "Uva": "#697596",
-                "Figo": "#697596",
-                "Kiwi": "#697596",
+                "Maçã": "#8B4B6B",
+                "Banana": "#B8860B",
+                "Cereja": "#8B4B6B",
+                "Damasco": "#CD853F",
+                "Uva": "#483D8B",
+                "Figo": "#2F4F4F",
+                "Kiwi": "#556B2F",
                 "Laranja": "#697596"
               }
             }
@@ -662,13 +662,13 @@
             "type": "other",
             "$extensions": {
               "mode": {
-                "Maçã": "#3F465A",
-                "Banana": "#3F465A",
-                "Cereja": "#3F465A",
-                "Damasco": "#3F465A",
-                "Uva": "#3F465A",
-                "Figo": "#3F465A",
-                "Kiwi": "#3F465A",
+                "Maçã": "#5A3F3F",
+                "Banana": "#8B7D00",
+                "Cereja": "#5A3F3F",
+                "Damasco": "#A0522D",
+                "Uva": "#2F2F5A",
+                "Figo": "#2F2F2F",
+                "Kiwi": "#3F5A3F",
                 "Laranja": "#3F465A"
               }
             }

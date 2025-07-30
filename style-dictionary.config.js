@@ -101,10 +101,10 @@ StyleDictionary.registerFormat({
     let selector;
     if (mode === 'light') {
       selector = brand === 'apple' 
-        ? `[class*="ids-theme-${brand}"], :root:not([class*="ids-theme-"])`
-        : `[class*="ids-theme-${brand}"]`;
+        ? `[class*="dds-theme-${brand}"], :root:not([class*="dds-theme-"])`
+        : `[class*="dds-theme-${brand}"]`;
     } else {
-      selector = `[class*="ids-theme-${brand}"][data-schema="dark"]`;
+      selector = `[class*="dds-theme-${brand}"][data-schema="dark"]`;
     }
     
     // Filtrar tokens baseado no modo
