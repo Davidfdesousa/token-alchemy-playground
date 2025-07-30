@@ -3,8 +3,9 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Palette, Copy, CheckCircle, RefreshCw } from 'lucide-react';
+import { Palette, Copy, CheckCircle, RefreshCw, Smartphone } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
+import AppPreview from './AppPreview';
 
 interface ColorToken {
   name: string;
@@ -236,14 +237,30 @@ const ColorPalettePlayground = () => {
           )}
         </div>
 
-        {/* Color Palette Display */}
+        {/* App Preview and Color Palette */}
         {!loading && (
           <div className="animate-fade-in">
-            <Tabs defaultValue="grouped" className="w-full">
-              <TabsList className="grid w-full grid-cols-2 h-12">
+            <Tabs defaultValue="preview" className="w-full">
+              <TabsList className="grid w-full grid-cols-3 h-12">
+                <TabsTrigger value="preview" className="text-base">
+                  <Smartphone className="w-4 h-4 mr-2" />
+                  App Preview
+                </TabsTrigger>
                 <TabsTrigger value="grouped" className="text-base">Agrupado por Tipo</TabsTrigger>
                 <TabsTrigger value="all" className="text-base">Todas as Cores</TabsTrigger>
               </TabsList>
+              
+              <TabsContent value="preview" className="mt-8">
+                <div className="space-y-6">
+                  <div className="text-center">
+                    <h3 className="text-xl font-semibold mb-2">Preview do App - {brands.find(b => b.id === selectedBrand)?.name}</h3>
+                    <p className="text-muted-foreground">
+                      Veja como as cores da marca {brands.find(b => b.id === selectedBrand)?.name} ficam aplicadas em interfaces reais
+                    </p>
+                  </div>
+                  <AppPreview selectedBrand={selectedBrand} selectedMode={selectedMode} />
+                </div>
+              </TabsContent>
               
               <TabsContent value="grouped" className="space-y-8 mt-8">
                 {Object.entries(groupedTokens).map(([groupName, tokens]) => (
